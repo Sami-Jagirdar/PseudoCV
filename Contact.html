@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3><strong>My Contact details: </strong></h3>
+        <ul> <!--unordered list-->
+            <!--<a> tag used for defining hyperlinks, href gives the destination-->
+            <li>Mailing Address: xxxx yyy St NW, Edmonton, AB T6E 4L1</li>
+            <li>Phone Number: 1800-YOLO-FTW</li>
+            <li>jagirdar@ualberta.ca</li>
+        </ul>
+
+<!--Let's Create a form for people to fill out their anime list, the ratings and the category
+    Basically an exercise to create a form. Note that the actual functionality
+    or behaviour of the form comes from JavaScript, which we will look at later.-->
+<h3><strong>Contact Form: </strong></h3>
+<form action="mailto:catch.sami24@gmail.com" method="post" enctype="text/plain"> <!--creating form, action was =  index.html that is why when we pressed submit
+                                                     or enter, it goes to homepage. The action attribute will be learned more about later-->
+<!--mailto:'''' opens up a mail client like gmail when submit or enter pressed
+    with method=post transferring your form info to the mail client-->
+    <label for="">Your Name: </label> <!--caption for some item (here box for the form)-->
+    <input type="text" name="Your name"> <!--name attribute is relevant to the action, learned more in detail later-->
+    <br>
+    <label for="">Your email: </label>
+    <input type="email" name="YourEmail">
+    <br>
+    <label for="">Your phone number: </label>
+    <input type="number" name="YourNumber">
+    <br>
+    <label for="">Your Favorite color: </label>
+    <input type="color" name="YourColor">
+    <br>
+    <label for="">Your Message: </label> <br>
+    <textarea name="Your Message" id="" cols="30" rows="10"></textarea>
+    <br>
+    <label for="">Upload Relevant files: (Resume, Transcript, etc.): </label>
+    <input type="file">
+    <br>
+    <label for="">Sign up for Email list: </label>
+    <input type="checkbox" name="" id="">
+    <br>
+    <label for="">Date of Submission: </label>
+    <input type="date">
+    <br>
+    <input type="submit">
+</form>
+<!--many input(an attribute) types, button is a type that will be useful later
+the name attribute identifies the data for our input/label-->
+
+
+</body>
+</html>
